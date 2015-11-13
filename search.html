@@ -1,0 +1,43 @@
+﻿{% load staticfiles %}	
+	
+    <body background="{% static "12345.jpg" %}">
+
+<table border=1 align="center">
+<tr>
+ <td><strong>您要找的联系人是：{{ people.name }}</strong></td>
+<tr>
+</table>
+<br><br>
+<table border=1 align="center">
+<tr>
+<th>姓名</th><th>性别</th><th>学号</th><th>电话</th><th>邮箱</th><th>QQ</th><th>生日</th><th>地址
+ </th>
+<tr>
+{% for people in people_list %}
+</tr>
+<td>{{ people.name }}</td>
+ 
+ <td>{% if people.sex %} 男 {% else %} 女 {% endif %}</td>
+ 
+ <td>{{ people.number }}</td>
+ 
+ <td>{{ people.phone }}</td>
+  
+ <td>{{ people.email }}</td>
+ 
+ <td>{{ people.qq}}</td>
+ <td>{{ people.birth }}</td>
+ 
+ <td>{{ people.address }} </td>
+ <td><a href="/delete/?id={{people.id}}">删除</td>
+ <td><a href="/change/?id={{people.id}}">修改</td>
+<tr>
+</table>
+<br><br>
+<table border=1 align="center">
+<tr>
+ <td><a href="/table">返回</td>
+<tr>
+</table>
+
+ 

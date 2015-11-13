@@ -1,0 +1,17 @@
+﻿{% load staticfiles %}	
+	
+    <body background="{% static "12345.jpg" %}">
+<html>
+<tr>
+<div align="center"><h2>修改密码<h2></div>
+</tr>
+<h1><form action="" method="post" onsubmit="alert('修改成功')"><h1>
+<table border=1 align="center">
+<tr>
+  <td>请输入新的密码</td>
+  <td><input name="new_secret" type="text"></td>
+  <td><input type="submit" value="修改"> </td>
+</tr>
+</table>
+</form>
+<div align="center"><h2><a href="/login/">返回</a><h2></div>

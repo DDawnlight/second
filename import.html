@@ -1,0 +1,42 @@
+﻿{% load staticfiles %}	
+	
+    <body background="{% static "12345.jpg" %}">
+<form method="post">
+<table border=1 align="center">
+<tr>
+ <td><strong>导入联系人</strong></td>
+<tr>
+</table>
+<br><br>
+<table border=1 align="center">
+ <td>姓名:<input name="name" type="text">
+ <td>性别:<input name="sex" type="radio" value="M"> 男 <input name="sex" type="radio" value="F"> 女 </td>
+ <td>学号:<input name="number"  type="text">
+ <tr>
+ <td>电话:<input name="phone"   type="text">
+ <td>邮箱:<input name="email"   type="text">
+ <td> QQ：<input name="qq"   type="text">
+ <tr>
+ <td>生日：<input name="birth"   type="text">
+ <td>地址:<input name="address"  type="text">
+ <td><input type="submit" value="保存"> 
+     <input type="reset" value="重填">
+  </tr>
+
+  </table>
+
+  </form>
+  </table>
+<br><br>
+  <table border=1 align="center">
+  <tr>
+  <td><a href="/table">浏览联系人</td>
+  </tr>
+  </table>
+
+ 
+
+
+ 
+
+

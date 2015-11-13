@@ -1,0 +1,35 @@
+﻿{% load staticfiles %}	
+	
+    <body background="{% static "12345.jpg" %}">
+<form method="post">
+ <table border=1 align="center">
+  <tr>
+  <td><strong>请输入联系人更改的信息<strong></td>
+  </tr>
+  </table>
+<br><br><br>
+<table border=1 align="center">
+ <td>姓名:<input name="name" value="{{new_people.name}}" type="text">
+ <td>性别:<input name="sex" type="radio" value="M"> 男 <input name="sex" type="radio" value="F"> 女 </td>
+ <td>学号:<input name="number" value="{{new_people.number}}" type="text">
+ <tr>
+ <td>电话:<input name="phone" value= "{{new_people.phone}}"  type="text">
+ <td>邮箱:<input name="email" value= "{{new_people.email}}"  type="text">
+ <td> QQ：<input name="qq" value="{{new_people.qq}}"  type="text">
+ <tr>
+ <td>生日：<input name="birth" value="{{new_people.birth}}"   type="text">
+ <td>地址:<input name="address" value="{{new_people.address}}"  type="text">
+ <td><input type="submit" value="保存"> 
+     <input type="reset" value="重填">
+  </tr>
+
+  </table>
+
+  </form>
+  </table>
+<br><br>
+  <table border=1 align="center">
+  <tr>
+  <td><a href="/table">浏览联系人</td>
+  </tr>
+  </table>
