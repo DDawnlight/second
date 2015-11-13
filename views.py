@@ -1,6 +1,7 @@
 #from django.shortcuts import render
 from models import People,User
 # Create your views here.
+############################
 from django.template import Context
 from django.shortcuts import render_to_response 
 from django import forms
