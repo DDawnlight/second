@@ -62,6 +62,8 @@ def change(request):
     c = Context({"new_people":new_people,})
     return render_to_response("change.html",c)  
 def search(request):
+
+    
     post=request.POST['search']
     user = request.user
     print post
